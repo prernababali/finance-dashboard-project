@@ -16,32 +16,59 @@ A RESTful backend API for a finance dashboard system with role-based access cont
 ---
 
 ## Project Structure
+
 finance-backend/
+
 ├── src/
+
 │   ├── config/
+
 │   │   └── db.js
+
 │   ├── models/
+
 │   │   ├── User.js
+
 │   │   └── Transaction.js
+
 │   ├── routes/
+
 │   │   ├── auth.routes.js
+
 │   │   ├── user.routes.js
+
 │   │   ├── transaction.routes.js
+
 │   │   └── dashboard.routes.js
+
 │   ├── controllers/
+
 │   │   ├── auth.controller.js
+
 │   │   ├── user.controller.js
+
 │   │   ├── transaction.controller.js
+
 │   │   └── dashboard.controller.js
+
 │   ├── middleware/
+
 │   │   ├── authenticate.js
+
 │   │   ├── authorize.js
+
 │   │   └── errorHandler.js
+
 │   ├── validators/
+
 │   │   ├── auth.validator.js
+
 │   │   └── transaction.validator.js
+
 │   └── swagger/
+
 │       └── swagger.js
+
 ├── .env
 ├── .gitignore
 ├── app.js
